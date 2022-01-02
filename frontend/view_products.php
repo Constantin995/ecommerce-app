@@ -113,13 +113,14 @@ if (isset($_POST['submit'])) {
                         <div class="col-md-6 col-lg-3">
                             <div class="card h-100">
                                 <div class="card-body text-center">
-                                    <img class="mb-3" src="../db_img/<?php echo $product['product_image_url']; ?>" alt="product image" style="width: 70%">
-                                    <p class="card-text"><a href="viewProduct.php?product=<?php echo $product['product_name']; ?>&id=<?php echo $product['product_id']; ?>&tag=<?php echo $product['product_tags']; ?>" class="text-decoration-none text-dark"><?php echo $product['product_description'] ?></a>
-                                    </p>
-                                    <h4 class="card-title text-danger mb-3">
-                                        <?php echo '$' . $product['product_price']; ?>
-                                    </h4>
-                                    <button class="btn btn-block btn-danger ">Add to Cart</button>
+                                    <a href="viewProduct.php?product=<?php echo $product['product_name']; ?>&id=<?php echo $product['product_id']; ?>&tag=<?php echo $product['product_tags']; ?>">
+                                        <img class="mb-3" src="../db_img/<?php echo $product['product_image_url']; ?>" alt="product image" style="width: 50%">
+                                        <p class="card-text"><a href="viewProduct.php?product=<?php echo $product['product_name']; ?>&id=<?php echo $product['product_id']; ?>&tag=<?php echo $product['product_tags']; ?>" class="text-decoration-none text-dark"><?php echo $product['product_name'] ?></a>
+                                        </p>
+                                        <h4 class="card-title text-danger mb-3">
+                                            <?php echo '$' . $product['product_price']; ?>
+                                        </h4>
+                                    </a>
                                 </div>
                             </div>
                         </div>

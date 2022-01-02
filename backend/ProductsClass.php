@@ -49,6 +49,14 @@ class ProductsClass extends Database
         return $querry->fetch();
     }
 
+    public function find4Products($product_tags)
+    {
+        $querry = $this->connect()->prepare('SELECT * FROM products WHERE product_tags LIKE ? ORDER BY RAND() LIMIT 4');
+        $querry->bindValue(1, '%' . $product_tags . '%');
+        $querry->execute();
+        return $querry->fetchAll();
+    }
+
     public function findProductById($product_id)
     {
         $querry = $this->connect()->prepare('SELECT * FROM products WHERE product_id = ?');

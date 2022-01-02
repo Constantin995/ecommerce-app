@@ -16,7 +16,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $('.comment-delete').click(function(){
-        return confirm('Do you want to delete this message?');
+        return confirm('Do you want to delete this comment?');
     });
 });
 

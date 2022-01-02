@@ -174,7 +174,7 @@ $found_comments = $comments->selectComment($product['product_id']);
                         <div class="card h-100">
                             <div class="card-body text-center">
                                 <img class="mb-3" src="../db_img/<?php echo $product['product_image_url']; ?>" alt="product image" style="width: 50%">
-                                <p class="card-text h6"><a href="viewProduct.php?product=<?php echo $product['product_name']; ?>&id=<?php echo $product['product_id']; ?>&tag=<?php echo $product['product_tags']; ?>" class="text-decoration-none text-dark"><?php echo $product['product_description'] ?></a>
+                                <p class="card-text h6"><a href="viewProduct.php?product=<?php echo $product['product_name']; ?>&id=<?php echo $product['product_id']; ?>&tag=<?php echo $product['product_tags']; ?>" class="text-decoration-none text-dark"><?php echo $product['product_name'] ?></a>
                                 </p>
                                 <div class="card-title text-danger">
                                     <h5>
