@@ -1,0 +1,50 @@
+body::before{
+    display: block;
+    content: '';
+    height: 70px;
+}
+
+@media(min-width:768px){
+    .input-small{
+        width: 50%;
+    }
+}
+
+.image-l1{
+    width: 40%;
+}
+
+.account-settings .user-profile {
+    margin: 0 0 1rem 0;
+    padding-bottom: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.account-settings .user-profile .user-avatar {
+    margin: 0 0 1rem 0;
+}
+.account-settings .user-profile .user-avatar img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1.5rem;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+}
+
+.hidden{
+    display: none;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: 5;
+  }
