@@ -5,6 +5,10 @@ require_once('../backend/init.php');
 $products_all = new ProductsClass;
 $products = $products_all->find_products();
 
+$phone_products = $products_all->find4Products('phone');
+$laptop_products = $products_all->find4Products('laptop');
+$headphones_products = $products_all->find4Products('headphones');
+
 if (isset($_SESSION['id'])) {
     $cart = new Cart;
     $cart_items = $cart->findUserCart($_SESSION['id']);
@@ -145,24 +149,22 @@ if (isset($_GET['cart'])) {
             </div>
         </div>
     </section>
-
-
-
     <section class="p-5 bg-light">
         <div class="container">
             <h3 class="text-black mb-3">Cell Phones</h3>
             <div class="row g-4">
-                <?php foreach ($products as $product) { ?>
+                <?php foreach ($phone_products as $product) { ?>
                     <div class="col-md-6 col-lg-3">
                         <div class="card h-100">
                             <div class="card-body text-center">
-                                <img class="mb-3" src="../db_img/<?php echo $product['product_image_url']; ?>" alt="product image" style="width: 70%">
-                                <p class="card-text"><a href="viewProduct.php?product=<?php echo $product['product_name']; ?>&id=<?php echo $product['product_id']; ?>&tag=<?php echo $product['product_tags']; ?>" class="text-decoration-none text-dark"><?php echo $product['product_description'] ?></a>
-                                </p>
-                                <h4 class="card-title text-danger mb-3">
-                                    <?php echo '$' . $product['product_price']; ?>
-                                </h4>
-                                <button class="btn btn-block btn-danger ">Add to Cart</button>
+                                <a href="viewProduct.php?product=<?php echo $product['product_name']; ?>&id=<?php echo $product['product_id']; ?>&tag=<?php echo $product['product_tags']; ?>">
+                                    <img class="mb-3" src="../db_img/<?php echo $product['product_image_url']; ?>" alt="product image" style="width: 50%">
+                                    <p class="card-text"><a href="viewProduct.php?product=<?php echo $product['product_name']; ?>&id=<?php echo $product['product_id']; ?>&tag=<?php echo $product['product_tags']; ?>" class="text-decoration-none text-dark"><?php echo $product['product_name'] ?></a>
+                                    </p>
+                                    <h4 class="card-title text-danger mb-3">
+                                        <?php echo '$' . $product['product_price']; ?>
+                                    </h4>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -170,7 +172,52 @@ if (isset($_GET['cart'])) {
             </div>
         </div>
     </section>
-
+    <section class="p-5 bg-light">
+        <div class="container">
+            <h3 class="text-black mb-3">Laptops / Notebooks</h3>
+            <div class="row g-4">
+                <?php foreach ($laptop_products as $product) { ?>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <a href="viewProduct.php?product=<?php echo $product['product_name']; ?>&id=<?php echo $product['product_id']; ?>&tag=<?php echo $product['product_tags']; ?>">
+                                    <img class="mb-3" src="../db_img/<?php echo $product['product_image_url']; ?>" alt="product image" style="width: 50%">
+                                    <p class="card-text"><a href="viewProduct.php?product=<?php echo $product['product_name']; ?>&id=<?php echo $product['product_id']; ?>&tag=<?php echo $product['product_tags']; ?>" class="text-decoration-none text-dark"><?php echo $product['product_name'] ?></a>
+                                    </p>
+                                    <h4 class="card-title text-danger mb-3">
+                                        <?php echo '$' . $product['product_price']; ?>
+                                    </h4>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                <?php } ?>
+            </div>
+        </div>
+    </section>
+    <section class="p-5 bg-light">
+        <div class="container">
+            <h3 class="text-black mb-3">Headphones</h3>
+            <div class="row g-4">
+                <?php foreach ($headphones_products as $product) { ?>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <a href="viewProduct.php?product=<?php echo $product['product_name']; ?>&id=<?php echo $product['product_id']; ?>&tag=<?php echo $product['product_tags']; ?>">
+                                    <img class="mb-3" src="../db_img/<?php echo $product['product_image_url']; ?>" alt="product image" style="width: 50%">
+                                    <p class="card-text"><a href="viewProduct.php?product=<?php echo $product['product_name']; ?>&id=<?php echo $product['product_id']; ?>&tag=<?php echo $product['product_tags']; ?>" class="text-decoration-none text-dark"><?php echo $product['product_name'] ?></a>
+                                    </p>
+                                    <h4 class="card-title text-danger mb-3">
+                                        <?php echo '$' . $product['product_price']; ?>
+                                    </h4>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                <?php } ?>
+            </div>
+        </div>
+    </section>
     <section class="p-3 bg-warning">
         <div class="container">
             <div class="row">

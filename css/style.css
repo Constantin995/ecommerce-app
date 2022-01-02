@@ -48,3 +48,8 @@ body::before{
     backdrop-filter: blur(3px);
     z-index: 5;
   }
+
+.card:hover{
+  box-shadow: 0 2px 2px 0 rgba(151, 216, 90, 0.2), 0 2px 6px 0 rgba(34, 76, 124, 0.19);
+  text-align: center;
+}
