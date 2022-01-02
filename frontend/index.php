@@ -146,27 +146,7 @@ if (isset($_GET['cart'])) {
         </div>
     </section>
 
-    <section class="p-5 bg-light">
-        <div class="container">
-            <h3 class="text-black mb-3">Telefoane mobile</h3>
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-3">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <img class="mb-3" src="../img/res_d19c96817afdecf68792c39609e0629d.webp" alt="">
-                            <p class="card-text"><a href="">
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, quam.</a>
-                            </p>
-                            <h4 class="card-title text-danger">
-                                1.345 Lei
-                            </h4>
-                            <button class="btn btn-block btn-danger ">Adauga in cos</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+
 
     <section class="p-5 bg-light">
         <div class="container">
