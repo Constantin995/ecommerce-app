@@ -87,6 +87,23 @@ $sum =  $cart->totalSum($_SESSION['id']);
             </div>
         </div>
     </nav>
+    <section class="py-3 bg-primary">
+        <div class="container">
+            <form action="view_products.php" class="form-group" method="POST">
+                <div class="input-group input-small">
+                    <input type="text" class="form-control" placeholder="Search for anything" name="searchBar">
+                    <select name="select">
+                        <option value="none">No filter</option>
+                        <option value="lowest">From Lowest Price</option>
+                        <option value="highest">From Higher Price</option>
+                    </select>
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-success bg-warning" type="submit" name="submit"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
     <section class="p-3 my-5">
         <div class="container">
             <div class="row">
@@ -105,7 +122,7 @@ $sum =  $cart->totalSum($_SESSION['id']);
                             <?php } ?>
                         </tbody>
                     </table>
-                    <div class="">
+                    <div>
                         <a href="../backend/deleteCart.php?cart=<?php echo $_SESSION['id']; ?>" class="mx-0 mx-sm-5 btn btn-danger d-inline">Remove all Items</a>
                         <p class="mx-0 mx-sm-5 d-inline">
                             <a class="btn btn-success" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
