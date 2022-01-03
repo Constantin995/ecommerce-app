@@ -98,20 +98,57 @@ if (isset($_GET['cart'])) {
             </form>
         </div>
     </section>
+
+
     <section class="p-3 bg-dark text-white">
         <div class="container">
-            <div class="row">
-                <div class="col-md">
-                    <img class="img-fluid" src="../img/unbox.svg" alt="">
-                </div>
-                <div class="col-md p-5">
-                    <p class="lead">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, nulla. Eaque minima cupiditate asperiores consectetur aperiam! Deserunt assumenda numquam suscipit, non ratione qui odit illo eligendi delectus ex harum dicta odio dolor ipsum hic nesciunt laudantium! Vitae, dolores cum, soluta earum est ipsum magni deleniti et placeat temporibus optio unde!
-                    </p>
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md">
+                                <img class="img-fluid" src="../img/unbox.svg" alt="">
+                            </div>
+                            <div class="col-md p-5">
+                                <p class="lead py-4">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, nulla. Eaque minima cupiditate asperiores consectetur aperiam! Deserunt assumenda numquam suscipit, non ratione qui odit illo eligendi delectus ex harum dicta odio dolor ipsum hic nesciunt laudantium! Vitae, dolores cum, soluta earum est ipsum magni deleniti et placeat temporibus optio unde!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md p-5">
+                                <p class="lead py-4">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt magni optio placeat est porro nemo nostrum, nam, velit consequatur vitae voluptatibus nulla ipsa tenetur dicta distinctio explicabo molestiae ullam ipsam veritatis. Laudantium asperiores sit, ipsum quae tenetur omnis suscipit ullam! Rerum neque, cupiditate tempore consequatur at aperiam, nam, sunt harum quia velit amet quo eos ex! Odit corporis eum quod!
+                                </p>
+                            </div>
+                            <div class="col-md">
+                                <img class="img-fluid" src="../img/undraw_noted_pc-9-f.svg" alt="" style="width: 77.3%;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md">
+                                <img class="img-fluid" src="../img/undraw_container_ship_ok-1-c.svg" alt="" style="width:99.8%">
+                            </div>
+                            <div class="col-md p-5">
+                                <p class="lead py-4">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sit eos dolorem. Vitae deserunt dolore qui officia nulla quam eveniet ab. Sed perspiciatis ducimus quod nisi exercitationem explicabo. Odit corrupti quia minima reprehenderit repellat, architecto molestias sapiente aliquid qui! Facilis perspiciatis fuga quisquam dignissimos distinctio ipsam laboriosam! Id quae dolorem eligendi nisi quibusdam, in suscipit.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+
+
+
+
 
     <section class="p-3 bg-success">
         <div class="container">
@@ -274,6 +311,9 @@ if (isset($_GET['cart'])) {
     <script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="../js/script.js"></script>
     <script src="../js/bootstrap.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 
 </html>
