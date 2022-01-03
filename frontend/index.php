@@ -106,7 +106,7 @@ if (isset($_GET['cart'])) {
                 </div>
                 <div class="col-md p-5">
                     <p class="lead">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus reprehenderit officiis nemo, error in dolorum aliquid molestias esse eaque excepturi cum ut autem id necessitatibus! Corrupti, quod error! Maiores, assumenda.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, nulla. Eaque minima cupiditate asperiores consectetur aperiam! Deserunt assumenda numquam suscipit, non ratione qui odit illo eligendi delectus ex harum dicta odio dolor ipsum hic nesciunt laudantium! Vitae, dolores cum, soluta earum est ipsum magni deleniti et placeat temporibus optio unde!
                     </p>
                 </div>
             </div>
