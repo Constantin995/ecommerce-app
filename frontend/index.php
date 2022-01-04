@@ -107,7 +107,7 @@ if (isset($_GET['cart'])) {
                     <div class="carousel-item active">
                         <div class="row">
                             <div class="col-md">
-                                <img class="img-fluid" src="../img/unbox.svg" alt="">
+                                <img class="img-fluid d-none d-sm-block" src="../img/unbox.svg" alt="">
                             </div>
                             <div class="col-md p-5">
                                 <p class="lead py-4">
@@ -124,14 +124,14 @@ if (isset($_GET['cart'])) {
                                 </p>
                             </div>
                             <div class="col-md">
-                                <img class="img-fluid" src="../img/undraw_noted_pc-9-f.svg" alt="" style="width: 77.3%;">
+                                <img class="img-fluid d-none d-sm-block" src="../img/undraw_noted_pc-9-f.svg" alt="" style="width: 70%;">
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="row">
                             <div class="col-md">
-                                <img class="img-fluid" src="../img/undraw_container_ship_ok-1-c.svg" alt="" style="width:99.8%">
+                                <img class="img-fluid d-none d-sm-block" src="../img/undraw_container_ship_ok-1-c.svg" alt="">
                             </div>
                             <div class="col-md p-5">
                                 <p class="lead py-4">
