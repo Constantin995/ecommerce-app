@@ -39,10 +39,6 @@ $users = $all_users->findAllUsers();
                             </a>
                         </li>
                         <li>
-                            <a href="dashboard.php" class="nav-link px-0 align-middle text-white">
-                                <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline">Dashboard</span> </a>
-                        </li>
-                        <li>
                             <a href="products.php" class="nav-link px-0 align-middle text-white">
                                 <i class="fs-4 bi-basket"></i> <span class="ms-1 d-none d-sm-inline">Products</span></a>
                         </li>
