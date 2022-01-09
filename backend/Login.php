@@ -8,6 +8,7 @@ class Login extends Database
         $query = $this->connect()->prepare('SELECT * FROM users WHERE user_email = ?');
         $query->bindValue(1, $user_email_login);
         $query->execute();
+        $user_found = $query->fetch();
 
         if ($query->rowCount() == 0) {
             header('Location: ../frontend/signup.php?error2=nouserorpasswordfound');
@@ -18,7 +19,7 @@ class Login extends Database
             $query->bindValue(1, $user_email_login);
             $query->bindValue(2, $user_password_login);
             $query->execute();
-            $user_found = $query->fetch();
+            $query->fetch();
 
             if ($query->rowCount() == 0) {
                 header('Location: ../frontend/signup.php?error2=nouserorpasswordfound');

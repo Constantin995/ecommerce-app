@@ -62,7 +62,7 @@ $sum =  $cart->totalSum($_SESSION['id']);
                     ?>
                         <?php if (isset($_SESSION['user_admin']) && $_SESSION['user_admin'] == 'admin') { ?>
                             <li class="nav-item">
-                                <a class="nav-link" href="admin/dashboard.php"><i class="bi bi-clipboard-data"></i>
+                                <a class="nav-link" href="admin/products.php"><i class="bi bi-clipboard-data"></i>
                                     Admin Area
                                 </a>
                             </li>
