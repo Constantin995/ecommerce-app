@@ -77,8 +77,7 @@ $sum =  $cart->totalSum($_SESSION['id']);
                                 <i class="bi bi-cart"></i> View Cart
                             </a>
                         </li>
-                    <?php } else {
-                    ?>
+                    <?php } else { ?>
                         <li class="nav-item">
                             <a class="nav-link" href="signup.php">Sing in <i class="bi bi-three-dots-vertical"></i> Login</a>
                         </li>

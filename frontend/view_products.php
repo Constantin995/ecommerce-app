@@ -70,8 +70,7 @@ if (isset($_POST['submit'])) {
                                 </a>
                             </li>
                         <?php }
-                    } else {
-                        ?>
+                    } else { ?>
                         <li class="nav-item">
                             <a class="nav-link" href="signup.php">Sing in <i class="bi bi-three-dots-vertical"></i> Login</a>
                         </li>
