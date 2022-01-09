@@ -15,15 +15,15 @@ class ProductsClass extends Database
     public function top_bar_search($item_name)
     {
         $querry = $this->connect()->prepare('SELECT * FROM products WHERE product_tags LIKE ?');
-        $querry->bindValue(1, '%' . $item_name . '%');
+        $querry->bindValue(1, $item_name . '%');
         $querry->execute();
         return $querry->fetchAll();
     }
 
     public function topBarSearchLowerPrice($item_name)
     {
-        $querry = $this->connect()->prepare('SELECT * FROM products WHERE product_tags = ? ORDER BY product_price ASC');
-        $querry->bindValue(1, '%' . $item_name . '%');
+        $querry = $this->connect()->prepare('SELECT * FROM products WHERE product_tags LIKE ? ORDER BY product_price ASC');
+        $querry->bindValue(1, $item_name . '%');
         $querry->execute();
         return $querry->fetchAll();
     }
@@ -31,7 +31,7 @@ class ProductsClass extends Database
     public function topBarSearchHigherPrice($item_name)
     {
         $querry = $this->connect()->prepare('SELECT * FROM products WHERE product_tags LIKE ? ORDER BY product_price DESC');
-        $querry->bindValue(1, '%' . $item_name . '%');
+        $querry->bindValue(1, $item_name . '%');
         $querry->execute();
         return $querry->fetchAll();
     }
@@ -87,7 +87,7 @@ class ProductsClass extends Database
     public function findProductsWithLimit($product_tag)
     {
         $querry = $this->connect()->prepare('SELECT * FROM products WHERE product_tags LIKE ? ORDER BY RAND() LIMIT 4');
-        $querry->execute(['%' . $product_tag . '%']);
+        $querry->execute([$product_tag . '%']);
         return $querry->fetchAll();
     }
 }
