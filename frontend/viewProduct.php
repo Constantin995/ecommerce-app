@@ -130,6 +130,7 @@ $found_comments = $comments->selectComment($product['product_id']);
                                     <textarea class="form-control" name="comment_text" rows="5"></textarea>
                                     <input type="hidden" value="<?php echo $product['product_id']; ?>" name="product_id">
                                     <input type="hidden" value="<?php echo $product['product_name']; ?>" name="product_name">
+                                    <input type="hidden" value="<?php echo $product['product_tags']; ?>" name="product_tags">
                                     <button class="btn btn-primary mt-2" type="submit" name="submit-comment">Submit</button>
                                 </div>
                             </form>

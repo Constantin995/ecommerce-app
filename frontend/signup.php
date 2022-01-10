@@ -152,7 +152,7 @@ if (isset($_GET['message'])) {
                             <input type="password" class="form-control" name="user_password">
                         </div>
                         <div class="form-group">
-                            <label for="repPassword">Repete Password</label>
+                            <label for="repPassword">Repet Password</label>
                             <input type="password" class="form-control" name="user_rep_password">
                         </div>
                         <div class="form-group">

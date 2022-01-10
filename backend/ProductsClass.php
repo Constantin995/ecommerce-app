@@ -15,7 +15,7 @@ class ProductsClass extends Database
     public function top_bar_search($item_name)
     {
         $querry = $this->connect()->prepare('SELECT * FROM products WHERE product_tags LIKE ?');
-        $querry->bindValue(1, $item_name . '%');
+        $querry->bindValue(1, '%' . $item_name . '%');
         $querry->execute();
         return $querry->fetchAll();
     }
