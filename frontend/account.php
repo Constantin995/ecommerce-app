@@ -134,7 +134,7 @@ if (isset($_GET['success'])) {
                             <div class="account-settings">
                                 <div class="user-profile">
                                     <div class="user-avatar">
-                                        <img src="../db_img/<?php echo empty($user_found['user_image']) ? "avatar.svg" : $user_found['user_image']; ?>" alt="customer image">
+                                        <img src="../db_img/<?php echo empty($user_found['user_image']) ? "avatar.png" : $user_found['user_image']; ?>" alt="customer image">
                                     </div>
                                     <h6 class="user-name">First Name: <span class="text-primary"><?php echo $_SESSION['user_name']; ?></span></h6>
                                     <h6 class="user-name">Second Name: <span class="text-primary"><?php echo $_SESSION['user_second_name']; ?></span></h6>
