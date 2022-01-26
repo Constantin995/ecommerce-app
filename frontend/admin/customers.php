@@ -76,7 +76,7 @@ $users = $all_users->findAllUsers();
                                     <td><?php echo $user['user_second_name']; ?></td>
                                     <td><?php echo $user['user_email']; ?></td>
                                     <td><?php echo $user['user_admin']; ?></td>
-                                    <td><img src="../../db_img/<?php echo empty($user['user_image']) ? "avatar.svg" : $user['user_image']; ?>" alt="userImage" class="img-fluid" style="width: 80px;"></td>
+                                    <td><img src="../../db_img/<?php echo empty($user['user_image']) ? "avatar.png" : $user['user_image']; ?>" alt="userImage" class="img-fluid" style="width: 80px;"></td>
                                 </tr>
                             <?php } ?>
                         </tbody>
